@@ -8,7 +8,7 @@ This repository is a helper repository to start working on the golden platform. 
 git clone --recurse-submodules git@github.com:Platform-OS/pos-golden-starter.git
 ```
 
-You always need to add `git submodule update` when core or theme manager modules are outdated.
+You always need to add `git submodule update` when core, theme manager or admin modules are outdated.
 
 ## Definitions
 
