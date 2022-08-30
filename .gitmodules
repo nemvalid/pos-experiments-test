@@ -8,5 +8,5 @@
 	branch = master
 [submodule "modules/admin"]
 	path = modules/admin
-	url = https://github.com/Platform-OS/pos-module-admin
+	url = git@github.com:Platform-OS/pos-module-admin.git
 	branch = master
