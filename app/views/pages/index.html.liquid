@@ -1,1 +1,15 @@
-👋
+<h1>Experiments module demo</h1>
+
+{% liquid
+  function demo_experiment = 'modules/experiments/commands/experiment/create', experiment_name: 'Hero-split-test'
+
+  function demo_variant_a = 'modules/experiments/commands/variant/create', variant_name: 'Variant A', experiment: demo_experiment, percentage: 50
+  function demo_variant_b = 'modules/experiments/commands/variant/create', variant_name: 'Variant B', experiment: demo_experiment, percentage: 25
+  function demo_variant_c = 'modules/experiments/commands/variant/create', variant_name: 'Variant C', experiment: demo_experiment, percentage: 25
+%}
+
+<pre>
+{{ context.cookies | json }}
+</pre>
+
+{% render 'experiments_demo' %}
